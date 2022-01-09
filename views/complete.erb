@@ -58,7 +58,7 @@
             </tr>
             <tr>
                 <th scope="col">内容</th>
-                <th scope="col"><%= name = params["content"] %></th>
+                <th scope="col"><%= name = params["content"].gsub(/\r\n|\r|\n/, "<br>") %></th>
             </tr>
         </table>
         <div class="text-center mb-4">
